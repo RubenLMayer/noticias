@@ -1,0 +1,151 @@
+/* Reset de Estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #111;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Estilos do Header */
+header {
+  background: #333;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+/* Estilos do Conteúdo Principal */
+.main-content {
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+#search-div {
+  margin: auto;
+}
+
+#search {
+  padding: 0.5rem 1rem;
+  width: 20rem;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+}
+
+article {
+  width: 300px;
+  background-color: white;
+}
+
+article > p,
+h2,
+div {
+  padding: 0.25rem 1rem;
+}
+
+article a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: dodgerblue;
+}
+
+article h2 {
+  color: dodgerblue;
+  font-size: 1.25rem;
+  line-height: 125%;
+}
+
+.news-intro {
+  font-size: 0.85rem;
+}
+
+.frame {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .frame {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .frame {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.published-at {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+#pagination {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+#pagination button {
+  font-size: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 25%;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+}
+
+#pagination button:hover {
+  background-color: white;
+  color: dodgerblue;
+  border: 2px solid dodgerblue;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Estilos do Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
